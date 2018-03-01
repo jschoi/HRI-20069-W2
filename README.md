@@ -30,3 +30,9 @@ In Ubuntu 16.04, git is already included, but for the other OS please refer to h
     $ git config --global push.default simple
     $ git config --global core.editor vi           # Using vi editor for git
 ```
+
+### Version control for Dockerfile using git
+  * ros-kinetic-core
+  * ros-kinetic-base
+  * ...
+  * ros-kinetic-desktop-full
