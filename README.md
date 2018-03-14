@@ -82,6 +82,18 @@ If you want to clone the repository into a directory named something other than 
     $ git clone https://github.com/cjs0818/HRI-20069 myHRI
   ```
 
+#### Recording Changes to the Repository
+As you edit files, Git sees them as modified, because you’ve changed them since your last commit. As you work, you selectively stage these modified files and then commit all those staged changes, and the cycle repeats.
+
+
+#### Checking the Status of Your Files
+  ```
+    $ git status
+    On branch master
+    Your branch is up-to-date with 'origin/master'.
+    nothing to commit, working directory clean
+  ```
+
 ### Version control for Dockerfile using git
   * ros-kinetic-core
   * ros-kinetic-base
