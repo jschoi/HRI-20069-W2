@@ -37,8 +37,8 @@ In Ubuntu 16.04, git is already included, but for the other OS please refer to h
 
 ### Git Basics
 You typically obtain a Git repository in one of two ways:
-  1. You can take a local directory that is currently not under version control, and turn it into a Git repository, or
-  2. You can clone an existing Git repository from elsewhere.
+  1. Initializing a repository in an existing directory, or
+  2. Cloning an existing Git repository from elsewhere.
 In either case, you end up with a Git repository on your local machine, ready for work.
 
 #### Initializing a Repository in an Existing Directory
@@ -70,7 +70,17 @@ In either case, you end up with a Git repository on your local machine, ready fo
     $ git commit -m 'v01'
   ```
 
+#### Cloning an Existing Repository
+You clone a repository with git clone <url>. For example, if you want to clone the Git for this class called HRI-20069 , you can do so like this:
+ 
+  ```
+    $ git clone https://github.com/cjs0818/HRI-20069
+  ```
+If you want to clone the repository into a directory named something other than HRI-20069, you can specify that as the next command-line option:
 
+  ```
+    $ git clone https://github.com/cjs0818/HRI-20069 myHRI
+  ```
 
 ### Version control for Dockerfile using git
   * ros-kinetic-core
