@@ -85,6 +85,7 @@ If you want to clone the repository into a directory named something other than 
 #### Recording Changes to the Repository
 As you edit files, Git sees them as modified, because you’ve changed them since your last commit. As you work, you selectively stage these modified files and then commit all those staged changes, and the cycle repeats.
 
+![pic-W2-001](./assets/images/lifecycle.png)
 
 #### Checking the Status of Your Files
   ```
