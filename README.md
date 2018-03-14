@@ -13,12 +13,12 @@ In Ubuntu 16.04, git is already included, but for the other OS please refer to h
 
   * First, make a folder (a git repository)
 ```
-    $ mkdir hri-20069
+    $ mkdir hri-20069-git
 ```
 
   * Initialize the repository,
 ```
-    $ cd hri-20069
+    $ cd hri-20069-git
     $ git init
 ```
 
