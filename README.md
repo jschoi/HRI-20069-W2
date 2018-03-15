@@ -107,6 +107,50 @@ As you edit files, Git sees them as modified, because you’ve changed them sinc
     nothing to commit, working directory clean
   ```
 
+#### Working with Remotes
+##### Showing Your Remotes
+To see which remote servers you have configured, you can run the git remote command. It lists the shortnames of each remote handle you’ve specified. If you’ve cloned your repository, you should at least see origin — that is the default name Git gives to the server you cloned from:
+
+  ```
+  $ git clone https://github.com/schacon/ticgit
+  Cloning into 'ticgit'...
+  remote: Reusing existing pack: 1857, done.
+  remote: Total 1857 (delta 0), reused 0 (delta 0)
+  Receiving objects: 100% (1857/1857), 374.35 KiB | 268.00 KiB/s, done.
+  Resolving deltas: 100% (772/772), done.
+  Checking connectivity... done.
+  $ cd ticgit
+  $ git remote
+  origin
+  ```
+  
+You can also specify -v, which shows you the URLs that Git has stored for the shortname to be used when reading and writing to that remote:
+
+  ```
+  $ git remote -v
+  origin  https://github.com/schacon/ticgit (fetch)
+  origin  https://github.com/schacon/ticgit (push)
+  ```
+
+If you have more than one remote, the command lists them all. For example, a repository with multiple remotes for working with several collaborators might look something like this.
+
+  ``
+ $ cd grit
+ $ git remote -v
+  bakkdoor  https://github.com/bakkdoor/grit (fetch)
+  bakkdoor  https://github.com/bakkdoor/grit (push)
+  cho45     https://github.com/cho45/grit (fetch)
+  cho45     https://github.com/cho45/grit (push)
+  defunkt   https://github.com/defunkt/grit (fetch)
+  defunkt   https://github.com/defunkt/grit (push)
+  koke      git://github.com/koke/grit.git (fetch)
+  koke      git://github.com/koke/grit.git (push)
+  origin    git@github.com:mojombo/grit.git (fetch)
+  origin    git@github.com:mojombo/grit.git (push)
+  ```
+
+This means we can pull contributions from any of these users pretty easily. We may additionally have permission to push to one or more of these, though we can’t tell that here.
+
 ### Git Branching
 
 ### Git on the Server
