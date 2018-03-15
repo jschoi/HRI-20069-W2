@@ -108,7 +108,7 @@ As you edit files, Git sees them as modified, because you’ve changed them sinc
   ```
 
 #### Working with Remotes
-##### Showing Your Remotes
+  ##### Showing Your Remotes
 To see which remote servers you have configured, you can run the git remote command. It lists the shortnames of each remote handle you’ve specified. If you’ve cloned your repository, you should at least see origin — that is the default name Git gives to the server you cloned from:
 
   ```
@@ -150,6 +150,23 @@ If you have more than one remote, the command lists them all. For example, a rep
   ```
 
 This means we can pull contributions from any of these users pretty easily. We may additionally have permission to push to one or more of these, though we can’t tell that here.
+
+  #### Adding Remote Repositories
+We’ve mentioned and given some demonstrations of how the git clone command implicitly adds the origin remote for you. Here’s how to add a new remote explicitly. To add a new remote Git repository as a shortname you can reference easily, run git remote add <shortname> <url>:
+ 
+  ```
+  $ git remote
+  origin
+  $ git remote add pb https://github.com/paulboone/ticgit
+  $ git remote -v
+  origin  https://github.com/schacon/ticgit (fetch)
+  origin  https://github.com/schacon/ticgit (push)
+  pb  https://github.com/paulboone/ticgit (fetch)
+  pb  https://github.com/paulboone/ticgit (push)
+  ```
+
+Now you can use the string pb on the command line in lieu of the whole URL. For example, if you want to fetch all the information that Paul has but that you don’t yet have in your repository, you can run git fetch pb:
+ 
 
 ### Git Branching
 
