@@ -180,6 +180,23 @@ Now you can use the string pb on the command line in lieu of the whole URL. For 
 
 Paul’s master branch is now accessible locally as pb/master — you can merge it into one of your branches, or you can check out a local branch at that point if you want to inspect it. 
 
+#### Fetching and Pulling from Your Remotes
+As you just saw, to get data from your remote projects, you can run:
+
+  ```
+  $ git fetch <remote>
+  ```
+  cf.) 'git pull' means fetch and merge.
+
+#### Pushing to Your Remotes
+When you have your project at a point that you want to share, you have to push it upstream. The command for this is simple: git push <remote> <branch>. If you want to push your master branch to your origin server (again, cloning generally sets up both of those names for you automatically), then you can run this to push any commits you’ve done back up to the server:
+ 
+  ```
+  $ git push origin master
+  ```
+
+This command works only if you cloned from a server to which you have write access and if nobody has pushed in the meantime. If you and someone else clone at the same time and they push upstream and then you push upstream, your push will rightly be rejected. You’ll have to fetch their work first and incorporate it into yours before you’ll be allowed to push.
+
 ### Git Branching
 
 ### Git on the Server
