@@ -134,7 +134,7 @@ You can also specify -v, which shows you the URLs that Git has stored for the sh
 
 If you have more than one remote, the command lists them all. For example, a repository with multiple remotes for working with several collaborators might look something like this.
 
-  ``
+  ```
  $ cd grit
  $ git remote -v
   bakkdoor  https://github.com/bakkdoor/grit (fetch)
