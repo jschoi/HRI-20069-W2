@@ -95,6 +95,16 @@ As you edit files, Git sees them as modified, because you’ve changed them sinc
     nothing to commit, working directory clean
   ```
 
+### Git Branching
+
+### Git on the Server
+
+### Distributed Git
+
+### GitHub
+
+### Git Tools
+
 ### Version control for Dockerfile using git
   * ros-kinetic-core
   * ros-kinetic-base
