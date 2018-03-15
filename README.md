@@ -215,6 +215,29 @@ If you want to see more information about a particular remote, you can use the g
       master pushes to master (up to date)
   ```
 
+#### Renaming and Removing Remotes
+You can run git remote rename to change a remote’s shortname. For instance, if you want to rename pb to paul, you can do so with git remote rename:
+
+  ```
+  $ git remote rename pb paul
+  $ git remote
+  origin
+  paul
+  ```
+
+It’s worth mentioning that this changes all your remote-tracking branch names, too. What used to be referenced at pb/master is now at paul/master.
+If you want to remove a remote for some reason — you’ve moved the server or are no longer using a particular mirror, or perhaps a contributor isn’t contributing anymore — you can either use git remote remove or git remote rm:
+
+  ```
+  $ git remote remove paul
+  $ git remote
+  origin
+  ```
+
+Once you delete the reference to a remote this way, all remote-tracking branches and configuration settings associated with that remote are also deleted.
+
+
+
 ### Git Branching
 
 ### Git on the Server
