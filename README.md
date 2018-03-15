@@ -36,6 +36,18 @@ In Ubuntu 16.04, git is already included, but for the other OS please refer to h
     ```
 
 ### Git Basics
+Git has three main states that your files can reside in: committed, modified, and staged:
+
+    * Committed means that the data is safely stored in your local database.
+
+    * Modified means that you have changed the file but have not committed it to your database yet.
+
+    * Staged means that you have marked a modified file in its current version to go into your next commit snapshot.
+
+This leads us to the three main sections of a Git project: the Git directory, the working tree, and the staging area.
+
+![pic-W2-001](./assets/images/areas.png)
+
 You typically obtain a Git repository in one of two ways:
   1. Initializing a repository in an existing directory, or
   2. Cloning an existing Git repository from elsewhere.
@@ -85,7 +97,7 @@ If you want to clone the repository into a directory named something other than 
 #### Recording Changes to the Repository
 As you edit files, Git sees them as modified, because you’ve changed them since your last commit. As you work, you selectively stage these modified files and then commit all those staged changes, and the cycle repeats.
 
-![pic-W2-001](./assets/images/lifecycle.png)
+![pic-W2-002](./assets/images/lifecycle.png)
 
 #### Checking the Status of Your Files
   ```
