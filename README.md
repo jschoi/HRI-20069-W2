@@ -197,6 +197,24 @@ When you have your project at a point that you want to share, you have to push i
 
 This command works only if you cloned from a server to which you have write access and if nobody has pushed in the meantime. If you and someone else clone at the same time and they push upstream and then you push upstream, your push will rightly be rejected. You’ll have to fetch their work first and incorporate it into yours before you’ll be allowed to push.
 
+#### Inspecting a Remote
+If you want to see more information about a particular remote, you can use the git remote show <remote> command. If you run this command with a particular shortname, such as origin, you get something like this:
+
+  ```
+  $ git remote show origin
+  * remote origin
+    Fetch URL: https://github.com/schacon/ticgit
+    Push  URL: https://github.com/schacon/ticgit
+    HEAD branch: master
+    Remote branches:
+      master                               tracked
+      dev-branch                           tracked
+    Local branch configured for 'git pull':
+      master merges with remote master
+    Local ref configured for 'git push':
+      master pushes to master (up to date)
+  ```
+
 ### Git Branching
 
 ### Git on the Server
