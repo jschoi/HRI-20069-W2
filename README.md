@@ -236,6 +236,10 @@ If you want to remove a remote for some reason — you’ve moved the server or 
 
 Once you delete the reference to a remote this way, all remote-tracking branches and configuration settings associated with that remote are also deleted.
 
+#### Tagging
+
+#### Git Aliases
+
 
 
 ### Git Branching
